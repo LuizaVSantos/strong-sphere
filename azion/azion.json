@@ -1,0 +1,63 @@
+{
+  "name": "blissful-johnmarston",
+  "bucket": "blissful-johnmarston",
+  "preset": "astro",
+  "env": "production",
+  "prefix": "20250430141143",
+  "not-first-run": true,
+  "function": {
+    "id": 43630,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 40815,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 0
+  },
+  "application": {
+    "id": 1746022887,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1746029872,
+    "name": "blissful-johnmarston",
+    "domain_name": "b801b3b12j.map.azionedge.net",
+    "url": "https://b801b3b12j.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 211204,
+      "origin-key": "c2e99b66-1658-41c6-950d-572e341e9649",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 401808,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 401809,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 401810,
+        "name": "Redirect to index.html",
+        "phase": "request"
+      },
+      {
+        "id": 401811,
+        "name": "Redirect to index.html for Subpaths",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}
